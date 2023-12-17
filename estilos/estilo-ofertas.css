@@ -1,0 +1,275 @@
+* {
+    box-sizing:border-box ;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: tahoma;
+}
+
+body {
+    background-image:url(../imagenes/imagenes-index/fondo-general.jpg);
+    background-repeat: repeat;
+}
+
+.nave {
+    background-color: rgb(13, 135, 211);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(3, 94, 93) ;
+    position: sticky;
+    cursor: crosshair;
+
+}
+
+.padre-listado {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px ;
+    background-color: rgb(13, 135, 211);
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+
+.listado {
+    background-color: rgb(13, 135, 211);
+    padding: 4px; 
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.listado a {
+    color: white;
+    font-size: larger;
+}
+
+footer {
+    background-color:#069acb;
+    text-align: center;
+    color: white;
+}
+
+.portada {
+    display: flex;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.elemento-texto {
+    color: white;
+    text-align: justify;
+    margin: 35px ;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.elemento-imagen {
+    margin:35px ;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    border: 3px solid #47607b;
+    border-radius: 4px;
+    padding: 10px 15px;
+    align-items: center;
+    font-size: 15px;
+    background-color: crimson;
+    margin: 0 auto;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    border: 2px solid;
+    border-color: #069acb ;
+    margin: 15px;
+    font-size: 30px;
+}
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    color: white;
+    padding-left: 40px ;
+    padding-right: 40px ;
+    margin: 30px;
+}
+
+.imagen-producto {
+    width: 380px;
+    height: 380px;
+    border:5px solid blue ;
+}
+@media screen and (min-width: 480px) {
+    
+    .nave {
+        height: 100%;
+        width: 100%;
+    }
+
+    .padre-listado {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .portada {
+        display: grid;  
+    }
+
+    .imagen-producto{
+        height: 180px;
+        width: 180px;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .elemento-imagen {
+        display: grid;
+        justify-items: center;
+        margin:15px;
+    }
+
+    .imagen-portada {
+        height:250px ;
+        width: 450px;
+        align-items: center;
+    }
+
+    p { 
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .padre-listado {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .imagen-portada {
+        height:250px ;
+        width: 720px;
+        align-items: center;
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr 1fr;
+        
+    }
+
+    .imagen-producto {
+         height: 230px;
+         width: 230px;
+    }
+
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .imagen-portada {
+            height:350px ;
+            width: 920px;
+            align-items: center;
+            }
+
+        .titulo {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 25px;
+        }
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        .imagen-portada {
+            height:350px ;
+            width: 1120px;
+            align-items: center;
+        }
+
+        .imagen-producto {
+            height: 260px;
+            width: 260px;
+       }
+   
+    }
+
+    @media screen and (min-width: 1920px) {
+
+        .listado a {
+            font-size: 30px;
+        }
+
+        .titulo {
+            font-size: 50px;
+        }
+
+        h1 {
+            font-size: 65px;
+        }
+
+        p {
+            font-size: 40px;
+        }
+
+        .imagen-portada {
+            height:450px ;
+            width: 1200px;
+            align-items: center;
+        }
+
+        .imagen-producto {
+            height: 380px;
+            width: 380px;
+            margin: 15px;
+       }
+
+       button {
+        font-size: 20px;
+        border: 5px solid #47607b;
+       }
+
+       .texto-producto {
+        font-size: 30px;
+       }
+
+       P{
+        font-size: 28px;
+       }
+     
+
+    footer {
+        font-size: 30px;
+    }
+   
+
+    }
+
+
